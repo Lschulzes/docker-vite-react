@@ -62,8 +62,8 @@ jobs:
           replace-with: "-"
           flags: "g"
 
-      - name: Generate deployment package
-        run: zip -r deploy.zip . -x '*.git*'
+      # - name: Generate deployment package
+      #   run: zip -r deploy.zip . -x '*.git*'
 
       - name: Deploy to EB
         uses: hmanzur/actions-aws-eb@v1.0.0
